@@ -2,7 +2,6 @@ import { Image, Spacer, Text, useTheme } from "@nextui-org/react";
 
 export const NavBar = () => {
     const { theme } = useTheme();
-    console.log(theme);
     
 
     return (
