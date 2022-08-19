@@ -30,7 +30,11 @@ export const NavBar = () => {
 
 
             <Spacer css={{ flex: 1 }} />
-            <Text color="white">Favoritos</Text>
+            <Link href={ '/favorites' }>
+                <NextLink css={{ marginRight: '10px' }}>
+                    <Text color="white">Favoritos</Text>
+                </NextLink>
+            </Link>
         </div>
     )
 };
