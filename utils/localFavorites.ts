@@ -21,7 +21,12 @@ const existPokemonInFavorite = (id: number): boolean => {
     return favorites.includes(id);
 }
 
+const pokemons = (): number[] => {
+    return JSON.parse(localStorage.getItem('favorites') || '[]');
+}
+
 export {
     localFavorites,
     existPokemonInFavorite,
+    pokemons,
 }
