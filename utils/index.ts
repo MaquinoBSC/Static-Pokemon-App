@@ -1,1 +1,1 @@
-export { localFavorites } from './localFavorites';
+export { localFavorites, existPokemonInFavorite } from './localFavorites';
