@@ -128,7 +128,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
     return {
         props: {
             pokemon: await getPokemonInfo(id)
-        }
+        },
+        revalidate: 86400 //60 * 60 * 24
     }
 }
 
